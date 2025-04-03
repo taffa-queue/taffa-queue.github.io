@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #ff6b6b;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #ff5252;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            pointer-events: none;
+        }
+    </style>
+    <!-- Load the confetti library in the head to ensure it's available before use -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_8xmC0J08NVp5mIiUnykzoatnltMqHsPn1pJ7XNGcaYo', {
+            api_host: 'https://eu.i.posthog.com'
+        })
+    </script>
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    
+    <header>
+        <h1>JÄYNÄ'D</h1>
+         <p>Don't worry, the line is probably shorter!</p>
+
+    </header>
+    
+    <div class="container">
+        <div class="card">
+
+            <h2>Today's taffa menu</h2>
+            <iframe width="100%" height="500" frameborder="0" allowfullscreen src="https://kanttiinit.fi/restaurant/3"></iframe>
+        </div>
+        
+        <!-- <div class="card">
+            <h2>Title</h2>
+            <p>Nulla facilisi. In hac habitasse platea dictumst. Vivamus eget mauris eget nisl euismod venenatis. Phasellus a diam ac nisi malesuada finibus. Etiam malesuada nunc vel magna suscipit, non cursus nisi aliquam.</p>
+            <p>Maecenas consectetur mi in ante semper, ac tempus nisi faucibus. Cras id bibendum turpis, in sollicitudin ex. Ut eu lectus finibus, molestie ipsum in, tempor neque.</p>
+            <a href="#" class="btn">Discover</a>
+        </div> -->
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Run confetti animation when the page loads
+        window.onload = function() {
+            // Function to run individual confetti bursts
+            function runConfetti(options) {
+                confetti({
+                    particleCount: options.particleCount || 150,
+                    spread: options.spread || 160,
+                    origin: options.origin || { y: 0.6 },
+                    colors: ['#ff6b6b', '#4a6fa5', '#feca57', '#1dd1a1', '#5f27cd'],
+                    angle: options.angle || 90,
+                    scalar: 3, // Makes each confetti 3x larger (default is 1)
+                    gravity: 0.8, // Slightly reduced gravity to make confetti stay in air longer
+                    drift: 1, // Add some drift for more natural movement
+                    ticks: 400, // Extend the animation duration (default is 200)
+                });
+            }
+            
+            // Extended animation sequence that lasts twice as long
+            
+            // Initial burst from center
+            runConfetti({
+                particleCount: 230,
+                spread: 180,
+            });
+            
+            // Left side burst after delay
+            setTimeout(() => {
+                runConfetti({
+                    particleCount: 100,
+                    angle: 60,
+                    spread: 80,
+                    origin: { x: 0 }
+                });
+            }, 200);
+            
+            // Right side burst after delay
+            setTimeout(() => {
+                runConfetti({
+                    particleCount: 100,
+                    angle: 120,
+                    spread: 80,
+                    origin: { x: 1 }
+                });
+            }, 200);
+            
+            // Final burst
+            setTimeout(() => {
+                runConfetti({
+                    particleCount: 200,
+                    spread: 180,
+                });
+            }, 500);
+        };
+    </script>
+</body>
+</html>
