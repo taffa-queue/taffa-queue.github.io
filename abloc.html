@@ -1,199 +1,136 @@
 <!DOCTYPE html>
+<!-- saved from url=(0020)https://lunch.tf.fi/ -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-    <style>
-        :root {
-            --primary-color: #4a6fa5;
-            --secondary-color: #ff6b6b;
-            --background-color: #f9f9f9;
-            --text-color: #333;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 0;
-            margin: 0;
-            overflow-x: hidden;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-            position: relative;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-        }
-        
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 3rem;
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background-color: #ff5252;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        #confetti-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1000;
-            pointer-events: none;
-        }
-    </style>
-    <!-- Load the confetti library in the head to ensure it's available before use -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script>
-        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-        posthog.init('phc_8xmC0J08NVp5mIiUnykzoatnltMqHsPn1pJ7XNGcaYo', {
-            api_host: 'https://eu.i.posthog.com'
-        })
-    </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="https://lunch.tf.fi/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Täffä lunch - Opiskelijaravintola Otaniemessä">
+  <link rel="apple-touch-icon" href="https://lunch.tf.fi/logo192.png">
+  <link rel="manifest" href="https://lunch.tf.fi/manifest.json">
+  <link href="./files/icon" rel="stylesheet">
+  <title>Täffä lunch</title>
+  <script defer="defer" src="./files/main.600004f5.js"></script>
+  <link href="./files/main.6349c2e6.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_8xmC0J08NVp5mIiUnykzoatnltMqHsPn1pJ7XNGcaYo', {
+        api_host: 'https://eu.i.posthog.com'
+    })
+  </script>
 </head>
-<body>
-    <canvas id="confetti-canvas"></canvas>
-    
-    <header>
-        <h1>JÄYNÄ'D</h1>
-         <p>Don't worry, the line is probably shorter!</p>
 
-    </header>
-    
-    <div class="container">
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
 
-        <div class="card">
-            <h2>Route from A-Bloc</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2616.8753905064286!2d24.82600354221457!3d60.185655219003955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x468df568b2cc2997%3A0xf2c0a32f1fadff00!2sA%20Bloc%20-%20Shopping%20Mall%2C%20Otaniementie%2012%2C%2002150%20Espoo!3m2!1d60.1847383!2d24.8254438!4m5!1s0x468df5f6e7570fa3%3A0x535febf32252c1a3!2zVMOkZmbDpCBMdW5jaCwgT3Rha2FhcmksIEVzcG9v!3m2!1d60.1860407!2d24.833006299999997!5e0!3m2!1sen!2sfi!4v1743695534853!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="root">
+
+    <div class="main-content-container">
+      <div id="app">
+        <div id="nav">
+          <div class="nav-flex">
+            <div class="nav-logo-container"><img class="nav-logo"
+                src="data:image/png;base64,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AAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAkCOIAAAAAACQI4gAAAAAAJAjiAAAAAAAk/E+AAQBqCdzXdJ8HOwAAAABJRU5ErkJggg=="
+                alt=""></div>
+          </div>
+          <div class="language-dropdown">
+            <button id="celebrate-button" class="MuiButtonBase-root MuiButton-root MuiButton-text" tabindex="0"
+              type="button" aria-haspopup="true"><span class="MuiButton-label">PRESS HERE</span><span
+                class="MuiTouchRipple-root"></span></button>
+          </div>
         </div>
+        <div class="public-container">
+          <div class="public-content">
+            <div class="splitter-box">Täffä Lunch is a lunch restaurant operated by Teknologföreningen in Otaniemi. The
+              restaurant is run by students, for students and is a part of several students' everyday lives, welcome to
+              lunch!</div>
 
-        <div class="card">
-            <h2>Today's taffa menu</h2>
-            <iframe width="100%" height="500" frameborder="0" allowfullscreen src="https://kanttiinit.fi/restaurant/3"></iframe>
+            <!-- <div class="splitter-box announcement">Announcement!</div> -->
+
+            <div class="splitter-box">
+              <h1>Route from A-Bloc</h1>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2616.8753905064286!2d24.82600354221457!3d60.185655219003955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x468df568b2cc2997%3A0xf2c0a32f1fadff00!2sA%20Bloc%20-%20Shopping%20Mall%2C%20Otaniementie%2012%2C%2002150%20Espoo!3m2!1d60.1847383!2d24.8254438!4m5!1s0x468df5f6e7570fa3%3A0x535febf32252c1a3!2zVMOkZmbDpCBMdW5jaCwgT3Rha2FhcmksIEVzcG9v!3m2!1d60.1860407!2d24.833006299999997!5e0!3m2!1sen!2sfi!4v1743695534853!5m2!1sen!2sfi" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="splitter-box">
+              <h1>Open Hours</h1>
+              <pre>Monday - Friday
+10.30 - 15.00</pre>
+            </div>
+            <div class="splitter-box">
+              <h1>Menu</h1>
+              <iframe width="100%" height="500" frameborder="0" allowfullscreen
+                src="https://kanttiinit.fi/restaurant/3"></iframe>
+
+            </div>
+
+          </div>
+          <div class="footer">
+            <div class="footer-content">Contact us: maybe@jayna.fi</div>
+          </div>
         </div>
-        
-        <!-- <div class="card">
-            <h2>Title</h2>
-            <p>Nulla facilisi. In hac habitasse platea dictumst. Vivamus eget mauris eget nisl euismod venenatis. Phasellus a diam ac nisi malesuada finibus. Etiam malesuada nunc vel magna suscipit, non cursus nisi aliquam.</p>
-            <p>Maecenas consectetur mi in ante semper, ac tempus nisi faucibus. Cras id bibendum turpis, in sollicitudin ex. Ut eu lectus finibus, molestie ipsum in, tempor neque.</p>
-            <a href="#" class="btn">Discover</a>
-        </div> -->
+      </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2025 Website. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Run confetti animation when the page loads
-        window.onload = function() {
-            // Function to run individual confetti bursts
-            function runConfetti(options) {
-                confetti({
-                    particleCount: options.particleCount || 150,
-                    spread: options.spread || 160,
-                    origin: options.origin || { y: 0.6 },
-                    colors: ['#ff6b6b', '#4a6fa5', '#feca57', '#1dd1a1', '#5f27cd'],
-                    angle: options.angle || 90,
-                    scalar: 3, // Makes each confetti 3x larger (default is 1)
-                    gravity: 0.8, // Slightly reduced gravity to make confetti stay in air longer
-                    drift: 1, // Add some drift for more natural movement
-                    ticks: 400, // Extend the animation duration (default is 200)
-                });
-            }
-            
-            // Extended animation sequence that lasts twice as long
-            
-            // Initial burst from center
+  </div>
+  <script>
+    // Run confetti animation when the page loads
+    const celebrateButton = document.getElementById('celebrate-button');
+    function startCelebration() {
+        // Function to run individual confetti bursts
+        function runConfetti(options) {
+            confetti({
+                particleCount: options.particleCount || 150,
+                spread: options.spread || 160,
+                origin: options.origin || { y: 0.6 },
+                colors: ['#ff6b6b', '#4a6fa5', '#feca57', '#1dd1a1', '#5f27cd'],
+                angle: options.angle || 90,
+                scalar: 3, // Makes each confetti 3x larger (default is 1)
+                gravity: 0.8, // Slightly reduced gravity to make confetti stay in air longer
+                drift: 1, // Add some drift for more natural movement
+                ticks: 400, // Extend the animation duration (default is 200)
+            });
+        }
+        
+        // Extended animation sequence that lasts twice as long
+        
+        // Initial burst from center
+        runConfetti({
+            particleCount: 230,
+            spread: 180,
+        });
+        
+        // Left side burst after delay
+        setTimeout(() => {
             runConfetti({
-                particleCount: 230,
+                particleCount: 100,
+                angle: 60,
+                spread: 80,
+                origin: { x: 0 }
+            });
+        }, 200);
+        
+        // Right side burst after delay
+        setTimeout(() => {
+            runConfetti({
+                particleCount: 100,
+                angle: 120,
+                spread: 80,
+                origin: { x: 1 }
+            });
+        }, 200);
+        
+        // Final burst
+        setTimeout(() => {
+            runConfetti({
+                particleCount: 200,
                 spread: 180,
             });
-            
-            // Left side burst after delay
-            setTimeout(() => {
-                runConfetti({
-                    particleCount: 100,
-                    angle: 60,
-                    spread: 80,
-                    origin: { x: 0 }
-                });
-            }, 200);
-            
-            // Right side burst after delay
-            setTimeout(() => {
-                runConfetti({
-                    particleCount: 100,
-                    angle: 120,
-                    spread: 80,
-                    origin: { x: 1 }
-                });
-            }, 200);
-            
-            // Final burst
-            setTimeout(() => {
-                runConfetti({
-                    particleCount: 200,
-                    spread: 180,
-                });
-            }, 500);
-        };
-    </script>
+        }, 500);
+    };
+    celebrateButton.addEventListener('click', startCelebration);
+</script>
 </body>
+
 </html>
